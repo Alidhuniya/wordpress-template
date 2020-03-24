@@ -1,0 +1,113 @@
+header.header-area .nav {
+  display: flex;
+  flex-direction: row;
+}
+
+header.header-area .nav .toggle-button {
+  margin-left: auto;
+  display: none;
+  border: 1px solid var(--light);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+header.header-area .nav .toggle-button:hover {
+  color: var(--gray);
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navbar-nav .nav-link {
+  padding: 0 1vw;
+}
+
+.navbar-nav .nav-link .link:hover {
+  color: var(--primary-color);
+}
+
+.nav .nav-brand {
+  font: normal 700 1.1rem var(--font-mont);
+}
+
+header.header-area .form-group,
+aside.sidebar .search-area .form-group {
+  background: var(--light);
+  box-shadow: var(--box-shadow);
+}
+
+header.header-area .input-control,
+aside.sidebar .search-area .input-control {
+  border: none;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  font: normal 300 0.9rem var(--font-Rale);
+}
+
+header.header-area button.btn.btn-submit {
+  border: none;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+aside.sidebar .search-area button.btn.btn-submit {
+  border: none;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+header.header-area button.btn.btn-submit:hover,
+aside.sidebar .search-area button.btn.btn-submit:hover {
+  color: var(--primary-color);
+}
+
+/* responsive toggle menu */
+@media (max-width: 992px) {
+  header.header-area .toggle-button {
+    display: block !important;
+  }
+  .nav {
+    flex-wrap: wrap;
+    height: 40px;
+  }
+
+  header.header-area .nav .collapse,
+  header.header-area .nav .navbar-nav {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+
+  header.header-area .form-group {
+    display: inline-block;
+    margin: 2% 0;
+  }
+  header.header-area .nav-link {
+    padding: 10px 0 !important;
+  }
+
+  header.header-area {
+    height: 90px;
+    background: var(--dark);
+    transition: height 0.5s ease;
+    overflow-y: hidden;
+  }
+}
+
+.nav-collapse {
+  height: 24rem !important;
+}

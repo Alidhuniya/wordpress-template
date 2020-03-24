@@ -1,0 +1,55 @@
+/* media for view-port */
+
+@media (min-width: 0px) {
+  .main-area .banner-area .banner img {
+    height: 15rem;
+  }
+  .main-area .categories a {
+    margin: 1rem 0;
+  }
+  .main-area .post-area {
+    margin: 0 5%;
+  }
+  .main-area .post-area .col-8-lg .grid {
+    column-count: auto;
+  }
+
+  aside.sidebar .latest-post .new-post .post-image {
+    width: 40%;
+  }
+
+  footer.footer-area > .row div {
+    padding-top: 5%;
+  }
+}
+
+@media (min-width: 475px) {
+  .main-area .banner-area .banner img {
+    height: 20rem;
+  }
+  aside.sidebar .latest-post .new-post .post-image {
+    width: 17%;
+  }
+  .main-area .post-area {
+    margin: 0 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-area .post-area .col-8-lg .grid {
+    column-count: 2;
+  }
+
+  .main-area .banner-area .banner img {
+    height: 27rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-area .banner-area .banner img {
+    height: auto;
+  }
+  aside.sidebar .latest-post .new-post .post-image img {
+    width: 88%;
+  }
+}
