@@ -1,3 +1,13 @@
+/* 
+Theme Name: Daily Tuition
+Theme URI: 
+Version: 1.0
+Author: Ali Dhuniya
+Author URI: wwww.dailywebtuition.com
+Description: Premium Blog Wordpress Theme
+
+*/
+
 /* import css files */
 @import url(./assets/css/_variables.css);
 /* global css file */
@@ -166,12 +176,12 @@ footer.footer-area .popular-tags .tags a:hover span {
   border-radius: 50px;
 }
 
-.main-area .pagination a span {
-  padding: 0.6rem 1rem;
+.main-area .pagination a, .pagination span{
+  padding: .6rem 1rem;
   border-radius: 450px;
 }
 
-.main-area .pagination a:hover span {
+.main-area .pagination a:hover {
   background: var(--primary-color);
   color: var(--light);
 }
@@ -213,4 +223,20 @@ footer.footer-area .popular-tags .tags a span {
 footer.footer-area .popular-tags .tags a {
   margin-left: 0rem;
   margin-top: 2rem;
+}
+
+/* wp theme styling */
+
+/* single post */
+
+.post-area .single-post .post-title {
+  padding: 2rem 0;
+}
+
+.post-area .single-post .post-thumbnail img {
+  width: 60%;
+}
+
+header.header-area .nav-color{
+  background: var(--dark);
 }

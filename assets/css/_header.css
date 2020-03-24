@@ -31,11 +31,11 @@ header.header-area .nav .toggle-button:hover {
   width: 100%;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav li{
   padding: 0 1vw;
 }
 
-.navbar-nav .nav-link .link:hover {
+.navbar-nav li .link:hover {
   color: var(--primary-color);
 }
 
